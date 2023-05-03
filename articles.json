@@ -32,5 +32,22 @@
     "filename": "post-2.md",
     "slug": "post-2",
     "id": "37ee8ca0-42fb-5797-9935-3fadcb669db5"
+  },
+  {
+    "fm": {
+      "title": "Third",
+      "description": "Third post.",
+      "date": "2023-4-12",
+      "categories": [
+        "sveltekit",
+        "svelte"
+      ],
+      "published": true
+    },
+    "relativePath": "posts/post-3.md",
+    "relativeDir": "posts",
+    "filename": "post-3.md",
+    "slug": "post-3",
+    "id": "2083f720-94d8-55a1-b52b-555ec3cda0f9"
   }
 ]
