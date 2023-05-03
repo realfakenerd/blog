@@ -1,7 +1,8 @@
 ---
 title: Third
 description: Third post.
-date: '2023-4-12'
+date: '2023-5-12'
+image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/MacQueen_tartan_%28Vestiarium_Scoticum%29.svg/240px-MacQueen_tartan_%28Vestiarium_Scoticum%29.svg.png'
 categories:
   - sveltekit
   - svelte
