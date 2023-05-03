@@ -2,7 +2,7 @@
 title: Phaser Tutorial
 description: Part 1/5 on phaser tutorial.
 date: '2023-5-13'
-image: 'https://phaser.io/images/github/300/phaser-header.png'
+image: 'https://img.youtube.com/vi/gnfgwkVg7vc/maxresdefault.jpg'
 categories:
   - phaser
   - javascript
