@@ -1,20 +1,36 @@
-{
-    "total": 3,
-    "articles" : [
-      {
-        "id" : 1,
-        "article_name" : "teste numero 1",
-        "summary" : "lorem ipsumsksksksk kffjfj ieo pe. ..."
-      },
-      {
-        "id": 2,
-        "article_name": "teste numero 2",
-        "summary": "lorem ipsumsksksksk kffjfj ieo pe. ..."
-      },
-      {
-        "id": 3,
-        "article_name": "teste numero 3",
-        "summary": "lorem ipsumsksksksk kffjfj ieo pe. ..."
-      }
-    ]
-}
+[
+  {
+    "fm": {
+      "title": "First post",
+      "description": "First post.",
+      "date": "2023-4-14",
+      "categories": [
+        "sveltekit",
+        "svelte"
+      ],
+      "published": true
+    },
+    "relativePath": "posts/post-1.md",
+    "relativeDir": "posts",
+    "filename": "post-1.md",
+    "slug": "post-1",
+    "id": "07495ae2-f054-56d1-9964-191c61a3897d"
+  },
+  {
+    "fm": {
+      "title": "Second",
+      "description": "Second post.",
+      "date": "2023-4-16",
+      "categories": [
+        "sveltekit",
+        "svelte"
+      ],
+      "published": true
+    },
+    "relativePath": "posts/post-2.md",
+    "relativeDir": "posts",
+    "filename": "post-2.md",
+    "slug": "post-2",
+    "id": "37ee8ca0-42fb-5797-9935-3fadcb669db5"
+  }
+]
