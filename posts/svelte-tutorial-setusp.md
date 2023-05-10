@@ -1,5 +1,5 @@
 ---
-title: Tutorial de Svelte - ssParte 1/setup
+title: Tutorial de Svelte - Parte 1/setup
 description: Primeiro tutorial de svelte mostrando o setup dele
 summary: Como iniciar no svelte
 date: '2023-5-5'
