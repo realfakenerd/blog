@@ -4,12 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "tp": "wireit",
     "ts": "wireit",
-    "build": "wireit",
-    "bundle": "wireit",
-    "generate": "wireit",
-    "prepare": "ts-patch install"
+    "build": "wireit"
   },
   "wireit": {
     "ts": {
@@ -21,52 +17,33 @@
       ],
       "output": [
         "dist/**",
-        ".tsbuildinfo"
-      ]
-    },
-    "tp": {
-      "command": "npx typia generate --input src/template --output src/generated --project tsconfig.json",
-      "clean": "if-file-deleted",
-      "files": [
-        "src/template/**/*.ts",
-        "tsconfig.json"
-      ],
-      "output": [
-        "src/generated/"
+        "dist/.tsbuildinfo"
       ]
     },
     "build": {
-      "command": "pnpm ts",
+      "command": "node dist/main.js",
       "dependencies": [
-        "tp"
+        "ts"
       ],
       "clean": "if-file-deleted"
-    },
-    "bundle": {
-      "command": "pnpm build",
-      "dependencies": [
-        "generate"
-      ]
-    },
-    "generate": {
-      "command": "node dist/generated/main.js"
     }
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "typia": "^3.8.4"
-  },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.59.2",
-    "@typescript-eslint/parser": "^5.59.2",
-    "eslint": "^8.39.0",
-    "extract-md-data": "^2.0.6",
+    "@aurios/md-data": "link:..\\extract-md-data",
+    "@types/node": "^20.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.49.0",
+    "gray-matter": "^4.0.3",
+    "lru-cache": "^10.0.1",
+    "slugify": "^1.6.6",
     "ts-node": "^10.9.1",
     "ts-patch": "^2.1.0",
-    "typescript": "^4.9.5",
+    "typescript": "^5.2.2",
+    "typia": "^5.0.4",
     "wireit": "^0.9.5"
   },
   "type": "module"
