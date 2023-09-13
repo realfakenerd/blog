@@ -8,7 +8,7 @@ author: ['lucas', 'realfakenerd@gmail.com']
 categories:
   - sveltekit
   - tutorial
-published: false
+published: true
 ---
 
 
