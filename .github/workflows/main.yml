@@ -33,7 +33,9 @@ jobs:
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
-        git checkout -b blog
+        git checkout -b nome-da-sua-branch-destino
         git add .
         git commit -m "Automated commit"
-        git push origin blog
+        git remote add origin_with_token https://${{ secrets.BLOG_SAP }}@github.com/seu-usuario/seu-repositorio.git
+        git push origin_with_token nome-da-sua-branch-destino
+    
