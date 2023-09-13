@@ -14,7 +14,7 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - uses: pnpm/action-setup@v2
       with:
@@ -22,7 +22,7 @@ jobs:
         run_install: false
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: 18  # Mude para a versão do Node.js que você está usando
 
@@ -32,13 +32,7 @@ jobs:
     - name: Run Node.js script
       run: node dist/main.js # Substitua 'seu-arquivo-node.js' pelo nome do seu arquivo Node.js
     
-    - name: Push to Different Branch
-      run: |
-        git config user.name "${{env.CI_COMMIT_AUTHOR}}"
-        git config user.email "username@users.noreply.github.com"
-        git checkout -b blog
-        git add .
-        git commit -m "Automated commit"
-        git remote add origin_with_token https://${{ secrets.BLOG_SAP }}@github.com/realfakenerd/blog.git
-        git push origin_with_token blog
-    
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: "Automated Commit"
+        branch: blog
