@@ -33,7 +33,7 @@ jobs:
       run: |
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
-        git checkout -b nome-da-sua-branch-destino
+        git checkout -b blog
         git add .
         git commit -m "Automated commit"
-        git push origin nome-da-sua-branch-destino
+        git push origin blog
