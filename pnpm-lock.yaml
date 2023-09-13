@@ -6,8 +6,8 @@ settings:
 
 devDependencies:
   '@aurios/md-data':
-    specifier: link:..\extract-md-data
-    version: link:../extract-md-data
+    specifier: ^2.1.0
+    version: 2.1.0
   '@types/node':
     specifier: ^20.6.0
     version: 20.6.0
@@ -50,6 +50,10 @@ packages:
   /@aashutoshrathi/word-wrap@1.2.6:
     resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
+    dev: true
+
+  /@aurios/md-data@2.1.0:
+    resolution: {integrity: sha512-CTXp2teEDWLBIwT0kWn79WA5UM3NLwKeK55AhiN3zsNPnijASq64wotFlWHQCdoi8nHrRChVa2bITWm6J3z6UA==}
     dev: true
 
   /@cspotcode/source-map-support@0.8.1:

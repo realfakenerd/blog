@@ -32,7 +32,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@aurios/md-data": "link:..\\extract-md-data",
+    "@aurios/md-data": "^2.1.0",
     "@types/node": "^20.6.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
