@@ -1,0 +1,25 @@
+name: Run Node.js Script
+
+on:
+  push:
+    branches:
+      - main  # Mude para o nome da sua branch principal
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14  # Mude para a versão do Node.js que você está usando
+
+    - name: Install dependencies
+      run: npm install  # Ou use yarn se preferir
+
+    - name: Run Node.js script
+      run: node dist/main.js # Substitua 'seu-arquivo-node.js' pelo nome do seu arquivo Node.js
