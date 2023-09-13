@@ -9,6 +9,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
+    env: 
+      CI_COMMIT_AUTHOR: Continuous Integration
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
@@ -31,8 +34,8 @@ jobs:
     
     - name: Push to Different Branch
       run: |
-        git config user.name "GitHub Actions"
-        git config user.email "actions@github.com"
+        git config user.name "${{env.CI_COMMIT_AUTHOR}}""
+        git config user.email "username@users.noreply.github.com"
         git checkout -b blog
         git add .
         git commit -m "Automated commit"
